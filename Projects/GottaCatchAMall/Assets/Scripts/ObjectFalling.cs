@@ -36,6 +36,6 @@ public class ObjectFalling : MonoBehaviour
     }
 
     public void Init(Sprite image){
-
+        GetComponent<SpriteRenderer>().sprite = image;
     }
 }
