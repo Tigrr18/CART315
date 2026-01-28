@@ -34,4 +34,8 @@ public class ObjectFalling : MonoBehaviour
             // Add scoring logic here 
         }
     }
+
+    public void Init(Sprite image){
+
+    }
 }
