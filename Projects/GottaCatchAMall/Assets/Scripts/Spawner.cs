@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
         // Set the spawn position
         spawnPosition = new Vector3(randomX, spawnY, 0);
         // Instantiate the prefab object at the spawn position
-        GameObject spawnedObject = GameInstantiate(spawnableObjectPrefab, spawnPosition, Quaternion.identity);
+        GameObject spawnedObject = Instantiate(spawnableObjectPrefab, spawnPosition, Quaternion.identity);
         // Assign the selected image to the spawned object
         spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex]);
     }
