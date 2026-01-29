@@ -7,10 +7,11 @@ public class Spawner : MonoBehaviour
     // Variables
     [SerializeField] private Sprite[] images;
     [SerializeField] private GameObject spawnableObjectPrefab;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject basket;
     
     [SerializeField] public TextMeshPro scoreText;
     [SerializeField] public TextMeshPro highScoreText;
-    [SerializeField] public TextMeshPro gameOverText;
 
     private float maxX = -7.62f;
     private float minX = 7.62f;
@@ -74,12 +75,13 @@ public class Spawner : MonoBehaviour
         // Instantiate the prefab object at the spawn position
         GameObject spawnedObject = Instantiate(spawnableObjectPrefab, spawnPosition, Quaternion.identity);
         // Assign the selected image to the spawned object
-        spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex]);
+        spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex], basket);
     }
 
     // Resets the game state and score
     public void ResetGame() {
         gameActive = true;
+        gameOverPanel.SetActive(false);
         score = 0;
         scoreText.text = "Score: " + score;
         highScoreText.text = "High Score: " + highScore;
@@ -88,6 +90,7 @@ public class Spawner : MonoBehaviour
     // Ends the game and updates high score if necessary
     public void EndGame(){
         gameActive = false;
+        gameOverPanel.SetActive(true);
         if (score > highScore){
             highScore = score;
             highScoreText.text = "High Score: " + highScore + " (New!)";

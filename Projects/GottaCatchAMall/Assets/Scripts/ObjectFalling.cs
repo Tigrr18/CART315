@@ -4,6 +4,7 @@ using System.Collections;
 public class ObjectFalling : MonoBehaviour
 {
     [SerializeField] private float _speed;
+    private GameObject _basket;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,8 +17,6 @@ public class ObjectFalling : MonoBehaviour
     {
         // Checks if the game is active
         if (Spawner.gameActive){
-            // Moves the object downwards based on speed and time
-            transform.position += new Vector3 (0, _speed*Time.deltaTime, 0);
             // Destroys the object and ends the game if the object goes below a certain point
             if (transform.position.y < -4.12f){
                 Spawner.Instance.EndGame();
@@ -29,14 +28,8 @@ public class ObjectFalling : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other){
-        if (other.CompareTag("Basket")){
-            Destroy(gameObject);
-            Spawner.Instance.ScorePoints();
-        }
-    }
-
-    public void Init(Sprite image){
+    public void Init(Sprite image, GameObject basket){
         GetComponent<SpriteRenderer>().sprite = image;
+        _basket = basket;
     }
 }
