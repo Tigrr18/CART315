@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     
     [SerializeField] public TextMeshPro scoreText;
     [SerializeField] public TextMeshPro highScoreText;
+    [SerializeField] public TextMeshPro gameOverText;
 
     private float maxX = -7.62f;
     private float minX = 7.62f;
@@ -80,6 +81,8 @@ public class Spawner : MonoBehaviour
     public void ResetGame() {
         gameActive = true;
         score = 0;
+        scoreText.text = "Score: " + score;
+        highScoreText.text = "High Score: " + highScore;
     }
 
     // Ends the game and updates high score if necessary
@@ -87,6 +90,7 @@ public class Spawner : MonoBehaviour
         gameActive = false;
         if (score > highScore){
             highScore = score;
+            highScoreText.text = "High Score: " + highScore + " (New!)";
         }
     }
 }

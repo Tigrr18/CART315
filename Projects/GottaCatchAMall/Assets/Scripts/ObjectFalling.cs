@@ -32,8 +32,7 @@ public class ObjectFalling : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (other.CompareTag("Basket")){
             Destroy(gameObject);
-
-            // Add scoring logic here 
+            Spawner.Instance.ScorePoints();
         }
     }
 
