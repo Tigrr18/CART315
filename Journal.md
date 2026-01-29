@@ -1,4 +1,4 @@
-Week 1: Make a Thing
+**Week 1: Make a Thing**
 
 I originally thought about making a small game on bitsby or another platform that I knew nothing about. After exploring my options, I felt a bit limited, and preferred acquiring new knowledge in a platform I was already fairly comfortable in rather than learning a new platform that I would probably never use again. 
 
@@ -14,15 +14,12 @@ To increase replayability and allow for better players to feel like they can get
 
 In terms of end of the game, the game ends after 10 failed notes. At the 10th failed notes, existing notes will despawn and the game will no longer spawn arrows. When resetting the game, it respawns all parameters and allows for arrows to be spawned again. 
 
+**Week 2: CatchAMall**
 
+Due to the similarity to my previous project, I attempted to continue the CatchAMall exercise without looking at the project available on the Github. 
 
-Figure 1: Code snippet for the handling of the falling of the arrow and determining the score of the arrows
+I started off with implementing the spawning mechanic, which I was fairly familiar with having done the DDR-like rhythm game last week. I was originally going to use four individul prefabs, but ended up using a single one, and switching the sprite whenever the GameObject was created. I started off doing the fall logic by doing a simple transform, as I had done in my previous game, but shifted towards using the built in gravity with RigidBody 2D. There was some issues with that that I couldn't get to fixing in time. 
 
+The scoring mechanics are simple. First, the game fails if an object goes past a specific point. The GAME OVER screen unfortunately had a bug, and I couldnt not make it appear properly when the game ends. I had an issue with the collider. The objects were coliding to each other and using physics, but its as if the collider wasn't registering the basket when attempting to score.
 
-Figure 2: Code snippet for the spawning of the arrows
-
-
-Figure 3: Code snippet for the random timer that determines the spawn rate of the arrows
-
-
-Figure 4: Gameplay snippet
+Overall, I think this week's work allowed me to refamiliarize myself with areas of Unity I haven't touched in a while, such as the colliders and RigidBody. I look forward to learning more about them and using them more confidently and efficiently
