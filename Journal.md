@@ -13,16 +13,3 @@ One thing I had some issues with is scoring the points, as the scoring is determ
 To increase replayability and allow for better players to feel like they can get to a challenge, the speed of the descent and the spawn speed of the arrows increase at every 50 arrows spawned. 
 
 In terms of end of the game, the game ends after 10 failed notes. At the 10th failed notes, existing notes will despawn and the game will no longer spawn arrows. When resetting the game, it respawns all parameters and allows for arrows to be spawned again. 
-
-
-
-Figure 1: Code snippet for the handling of the falling of the arrow and determining the score of the arrows
-
-
-Figure 2: Code snippet for the spawning of the arrows
-
-
-Figure 3: Code snippet for the random timer that determines the spawn rate of the arrows
-
-
-Figure 4: Gameplay snippet
