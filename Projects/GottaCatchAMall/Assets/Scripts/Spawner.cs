@@ -1,11 +1,16 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class Spawner : MonoBehaviour
 {
     // Variables
     [SerializeField] private Sprite[] images;
     [SerializeField] private GameObject spawnableObjectPrefab;
+    
+    [SerializeField] public TextMeshPro scoreText;
+    [SerializeField] public TextMeshPro highScoreText;
+
     private float maxX = -7.62f;
     private float minX = 7.62f;
     private float spawnY = 6.21f;
@@ -13,20 +18,35 @@ public class Spawner : MonoBehaviour
     private float timer;
 
     // Static variables
-    public static bool gameActive = true;
+    public static bool gameActive;
     public static Spawner Instance { get; private set; }
+    private static int score;
+    private static int highScore = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         // technically, I should be doing a proper singleton and checking for existing 
-        // instance, but i know this script will only be assigned to a single object in the scene
+        // instance, but I know this script will only be assigned to a single object in the scene
+        // so I'm being lazy and no doing it to save time
         Instance = this; 
+        ResetGame();
         StartCoroutine(SpawnTimer());
     }
 
     // Update is called once per frame
     void Update() {
         
+    }
+
+    // Function to score points. If game is not active, do nothing
+    public void ScorePoints(){
+        if (!gameActive) return;
+        score++;
+    }
+
+    // Simple getter for score
+    public int GetScore(){
+        return score;
     }
 
     // Coroutine to handle spawning at random intervals
@@ -56,7 +76,17 @@ public class Spawner : MonoBehaviour
         spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex]);
     }
 
+    // Resets the game state and score
     public void ResetGame() {
         gameActive = true;
+        score = 0;
+    }
+
+    // Ends the game and updates high score if necessary
+    public void EndGame(){
+        gameActive = false;
+        if (score > highScore){
+            highScore = score;
+        }
     }
 }

@@ -4,7 +4,6 @@ using System.Collections;
 public class ObjectFalling : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private float maxY = -6f; //need to double check max Y position for destroying object
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,14 +14,17 @@ public class ObjectFalling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Checks if the game is active
         if (Spawner.gameActive){
+            // Moves the object downwards based on speed and time
             transform.position += new Vector3 (0, _speed*Time.deltaTime, 0);
-            if (transform.position.y < maxY){
+            // Destroys the object and ends the game if the object goes below a certain point
+            if (transform.position.y < -4.12f){
+                Spawner.Instance.EndGame();
                 Destroy(gameObject);
-
-                // Add fail logic here
             }
         } else {
+            // Destroys game object if the game is not active
             Destroy(gameObject);
         }
     }
