@@ -44,6 +44,11 @@ public class Spawner : MonoBehaviour
     public void ScorePoints(){
         if (!gameActive) return;
         score++;
+        scoreText.text = "Score: " + score;
+        if (score > highScore){
+            highScore = score;
+            highScoreText.text = "High Score: " + highScore;
+        }
     }
 
     // Simple getter for score
@@ -75,13 +80,14 @@ public class Spawner : MonoBehaviour
         // Instantiate the prefab object at the spawn position
         GameObject spawnedObject = Instantiate(spawnableObjectPrefab, spawnPosition, Quaternion.identity);
         // Assign the selected image to the spawned object
-        spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex], basket);
+        spawnedObject.GetComponent<ObjectFalling>().Init(images[randomIndex]);
     }
 
     // Resets the game state and score
     public void ResetGame() {
         gameActive = true;
         gameOverPanel.SetActive(false);
+        basket.SetActive(true);
         score = 0;
         scoreText.text = "Score: " + score;
         highScoreText.text = "High Score: " + highScore;
@@ -91,6 +97,7 @@ public class Spawner : MonoBehaviour
     public void EndGame(){
         gameActive = false;
         gameOverPanel.SetActive(true);
+        basket.SetActive(false);
         if (score > highScore){
             highScore = score;
             highScoreText.text = "High Score: " + highScore + " (New!)";

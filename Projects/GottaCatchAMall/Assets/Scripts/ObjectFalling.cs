@@ -4,7 +4,6 @@ using System.Collections;
 public class ObjectFalling : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private GameObject _basket;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,8 +27,17 @@ public class ObjectFalling : MonoBehaviour
         }
     }
 
-    public void Init(Sprite image, GameObject basket){
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Collision detected with " + other.gameObject.name);
+        if (other.gameObject.CompareTag("Basket")) {
+            Debug.Log("Caught by basket!");
+            Spawner.Instance.ScorePoints();
+            Destroy(gameObject);
+        }   
+    }
+
+    public void Init(Sprite image){
         GetComponent<SpriteRenderer>().sprite = image;
-        _basket = basket;
     }
 }

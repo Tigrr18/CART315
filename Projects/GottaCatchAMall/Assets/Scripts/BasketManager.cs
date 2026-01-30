@@ -27,11 +27,4 @@ public class BasketManager : MonoBehaviour
         }
         transform.position = new Vector3(basket_x, -3.5f, 0);
     }
-
-    void OnTriggerEnter2D(Collider2D other){
-        if (other.CompareTag("FallingObject")){
-            Spawner.Instance.ScorePoints();
-            Destroy(other.gameObject);
-        }
-    }
 }
