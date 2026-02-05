@@ -36,7 +36,7 @@ First of all, I wanted to try to play around with the "Pawng" game that we had s
 
 Considering the time I had available to work on the project, I decided to try my hand at making a Player VS AI version of the game. 
 
-First off, I used a tag to differenciate the ball, to be able to fetch the position of the ball. My "AI" was going to be mainly based on knowing *where* the ball is, and *when* it would start knowing it.
+First off, I used a tag to differenciate the ball, to be able to fetch the position of the ball. My "AI" was going to be mainly based on knowing **where** the ball is, and **when** it would start knowing it.
 
 ### Attempt 1:
 
