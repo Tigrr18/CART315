@@ -71,6 +71,9 @@ void RamdomizeTargetPosition() {
 }
 ```
 
+I messed around with having a timer or not, but ended up deciding against it. I ran into multiple bugs, needing to use way too many Debug.Log() functions to figure out what the issue was.
+
+It ended up working much better after all the debuging.
 
 
 
