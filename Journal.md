@@ -42,6 +42,35 @@ First off, I used a tag to differenciate the ball, to be able to fetch the posit
 
 My first attempt used different boolean flags, switching between going towards or away from the exact position of the ball. I eventually also tried leaving it completely immobile, just to have a bit more randomization.
 
+To make sure the paddle wouldn't constantly be flickering between the options, I tried to use timers to flip between modes, with a Random.Range(). I originally tried implementing this through a counter.
+
+```C#
+if (randomTimer <= 0) {
+            randomTimer = Random.Range(100,200);
+            isOpposite = !isOpposite;
+        } else {
+            randomTimer--;
+            if (isOpposite){
+                MovePaddleOpposite();
+            } else {
+                MovePaddle();
+            }
+        }
+}
+```
+
+### Attempt 2:
+
+After speaking to a classmate and sharing our prototypes, I got the feedback that instead of flipping between modes, changing the target position would be much simpler. I tried a few things, but ended up landing on the following: 
+
+```C#
+void RamdomizeTargetPosition() {
+    ballYPos = GetBallYPosition();
+    targetYPos = ballYPos + Random.Range(-1.5f, 1.5f);
+    targetYPos = Mathf.Round(targetYPos * 10f) / 10f; // Round to nearest 0.1
+}
+```
+
 
 
 
