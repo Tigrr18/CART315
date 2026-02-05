@@ -28,3 +28,20 @@ Overall, I think this week's work allowed me to refamiliarize myself with areas 
 
 ## Week 3: Prototyping mechanics
 
+First of all, I wanted to try to play around with the "Pawng" game that we had studied in class. I had a few ideas on how the mechanics could be changed and played with in an interesting way:
+- single player pong (has a button to switch sides on the paddle)
+- gravity single player (paddle controlled by mouse mouvement, the idea is to be like when we would rebound a ping pong ball on a paddle for as long as possible without making the ball fall)
+- coop pong: you gain points from exchanges together, but speed changes at random
+- player vs AI pong
+
+Considering the time I had available to work on the project, I decided to try my hand at making a Player VS AI version of the game. 
+
+First off, I used a tag to differenciate the ball, to be able to fetch the position of the ball. My "AI" was going to be mainly based on knowing *where* the ball is, and *when* it would start knowing it.
+
+### Attempt 1:
+
+My first attempt used different boolean flags, switching between going towards or away from the exact position of the ball. I eventually also tried leaving it completely immobile, just to have a bit more randomization.
+
+
+
+
