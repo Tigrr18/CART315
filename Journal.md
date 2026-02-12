@@ -108,4 +108,35 @@ bool IsTouchingPlatformLayer()
     }
 ```
 
-This time, instead of using a separate script to handle the platforms, I will directly use the PlayerController script to check if the character is currently moving up or down, and make the target platforms disabled when the character is actively going up, and reactivate when the character is falling back down. 
+This time, instead of using a separate script to handle the platforms, I will directly use the PlayerController script to check if the character is currently moving up or down, and make the target platforms disabled when the character is actively going up, and reactivate when the character is falling back down. Tho achieve this, I did the following:
+
+```C#
+void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("JumpThroughPlatform")) {
+            if(CurrentlyFalling){
+                this.GetComponent<CapsuleCollider>().enabled = false;
+            } else{
+                this.GetComponent<CapsuleCollider>().enabled = true;
+            }
+        }
+    }
+```
+
+To make sure I would know when the character is going up or down, I created a method that reads the Y position of the character at intervals of 0.1 second to check if it was going up or down. The "Wait()" method referenced within the code is simply an IEnumerator that waits the time given in its parameters (here 0.1 second).
+
+```C#
+    bool CurrentlyFalling(){
+        int posY1, posY2, posYdifference;
+
+        posY1 = transform.position.y;
+        Wait(0.1f);
+        posY2 = transform.position.y;
+
+        if (posY1>=posY2){
+            return true;
+        }
+        return false;
+    }
+```
+
