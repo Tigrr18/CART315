@@ -75,5 +75,37 @@ I messed around with having a timer or not, but ended up deciding against it. I 
 
 It ended up working much better after all the debuging.
 
+## Week 4: 
 
+This week, I first tried to establish a UI for the breakout game that we played around with in class. I had some trouble getting the buttons and the scenes linked properly, but ended up making it work. I had some issues with properly linking the buttons, but ended up figuring it out after watching a tutorial. Switching the scenes around wasn't too difficult, it was one of the easier parts for me. I also tested out importing different fonts into Unity. Figuring out how to install the fonts properely was a bit of a challenge, but it ended up being worth it.
 
+For fun, I went back to a game I made a couple of years ago (a platformer), attempting to fix some issues I previously had with the colliders. Originally, I tried making it possible for the player to jump through specific types of platforms (leaves and bridge) and not jump through others (floating islands). When I origially made the game, I failed to implement the jump through mechanic, as I was not using tags properly. 
+
+My original method to detect if the platform should be activated or not was the following:
+```C#
+void JumpThrough()
+    {
+        // Check if the player is grounded and touching the platform layer
+        if (playerController != null && playerController.isGrounded && IsTouchingPlatformLayer())
+        {
+            // Disable the player's collider temporarily
+            playerController.col.enabled = false;
+
+            // Enable the collider after a short delay (adjust the delay as needed)
+            Invoke("EnablePlayerCollider", 0.5f);
+        }
+    }
+```
+
+The "IsTouchingPlatformLayer()" method mentionned in the if statement is the following:
+```C#
+bool IsTouchingPlatformLayer()
+    {
+        // Check if the player is touching the platform layer using Physics2D
+        Collider2D collider = Physics2D.OverlapCircle(playerController.col.bounds.center, playerController.col.bounds.extents.x, platformLayer);
+
+        return collider != null;
+    }
+```
+
+This time, instead of using a separate script to handle the platforms, I will directly use the PlayerController script to check if the character is currently moving up or down, and make the target platforms disabled when the character is actively going up, and reactivate when the character is falling back down. 
