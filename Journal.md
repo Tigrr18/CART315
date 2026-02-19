@@ -201,4 +201,4 @@ void BubblePop() {
 }
 ```
 
-This code allows me to first get the x and y position of the mouse, and create a vector at which the bubble object will be created. After being created, the GameObject calls the method shown [here](### BubbleManager.cs - The Code on the Instantiated Objects). 
+This code allows me to first get the x and y position of the mouse, and create a vector at which the bubble object will be created. After being created, the GameObject calls the method shown [here](#bubblemanagercs---the-code-on-the-instantiated-objects). 
