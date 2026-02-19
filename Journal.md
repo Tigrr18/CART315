@@ -146,6 +146,59 @@ This week, I chose to focus on reworking animations I had trouble with in my fir
 
 <img src="https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/cauldron-02.png" width="250"> ![Bubble pop animation, sprite by Arielle Wong, animation by Alexandre Godfroy](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/bubblePop.gif)
 
-Image of the cauldron (main asset) and bubble animation mentionned above. The illustrations are both made in illustrator by Arielle Wong, and the bubble animation was made in after effects by Alexandre Godfroy (me).
+*Image of the cauldron (main asset) and bubble animation mentionned above. The illustrations are both made in illustrator by Arielle Wong, and the bubble animation was made in after effects by Alexandre Godfroy (me).*
 
 My gameplan as to create a script which I would attach to a prefab object that would first place the bubble at the cursor, then play the animation, and have the instance destroy itself. This would allow for the bubbles to properly be generated, play the animation, then avoid overcrowding by destroying itself. Using an instance also allows me to easily switch out the sprite/animation with another, if I want to implement the different bubble versions that we had originally made. 
+
+### BubbleManager.cs - The Code on the Instantiated Objects
+
+```C#
+using UnityEngine;
+using System.Collections;
+
+public class BubbleManager : MonoBehaviour
+{
+    private Animator animator; //for anim
+    private SpriteRenderer spriteRenderer; //for visibility
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public void Anim()
+    {
+        // Enable animation
+        animator.enabled = true;
+
+        // Play animation
+        animator.Play(animationName, 0, 0f);
+
+        //Delay to make sure the animation has time to finish playing
+        Delay(1f);
+
+        //Destroys the object when the animation is done to ensure there is no overcrowding
+        Destroy(gameObject);
+    }
+    
+    IEnumerator Delay (float delay)
+    {
+        yield return new WaitForSeconds(delay);
+    }
+}
+```
+
+This code allows me to, when instantiating the object, enable the animation, play it, and wait a delay to make sure the animation is complete. It then destroys the object to ensure that invisible objects don't keep crowding the viewport and allows for better performances. 
+
+### BubblePop() - The Creation of the Objects
+
+```C#
+void BubblePop() {
+    //Get position of the mouse
+    float mouseX = Input.GetAxis("Mouse X");
+    float mouseY = Input.GetAxis("Mouse Y");
+
+    //Create bubble at the position of the mouse
+    GameObject bubble = Instantiate(bubblePopPrefab, new Vector3(mouseX, mouseY, 0), Quaternion.identity);
+
+    bubble.GetComponent<BubbleManager>().Anim();
+}
+```
+
+This code allows me to first get the x and y position of the mouse, and create a vector at which the bubble object will be created. After being created, the GameObject calls the method shown [here](### BubbleManager.cs - The Code on the Instantiated Objects). 
