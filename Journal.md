@@ -142,11 +142,17 @@ To make sure I would know when the character is going up or down, I created a me
 
 ## Week 5: Returning to an old game jam to review & fix animations
 
-This week, I chose to focus on reworking animations I had trouble with in my first game jam. At the time, it was my first time trying to instance objects and play animations on instanciated objects, so I had absolutely no idea how to do it. The game itself was a clicker, and I wanted to make a small bubble appear and pop whenever a click was registered. We had also originally created different variations of our assets, which would change/appear as the player would buy upgrades and multipliers in the shop. I think it would also be interesting to have some random bubbles popping over the cauldron in a passive manner.
+This week, I chose to focus on reworking animations I had trouble with in my first game jam. At the time, it was my first time trying to instance objects and play animations on instanciated objects, so I had absolutely no idea how to do it. The game itself was a clicker, and I wanted to make a small bubble appear and pop whenever a click was registered. We had also originally created different variations of our assets, which would change/appear as the player would buy upgrades and multipliers in the shop. I think it would also be interesting to have some random bubbles popping over the cauldron in a passive manner. 
+
+I think this element of animation is super important for juiciness and interaction with the game, especially in the case of a clicker game. Clicker games are barely even considered a game by some, due to its extreme simplification and limited interactivity. Adding a simple animation will allow to capture the attention and focus of the player even more, keeping them engaged in the gameplay loop. Having visual stimuli that signify that an action has been complete help the player feel more engaged with the game, and this feeling of engagement is the main thing we are looking for in a clicker game. What the game will lack in mechanics needs to be replaced by game feel and aesthetics, which is exactly what I am looking to do.
+
+The idea of the indicator being bubbles popping not only fit the theme of the game, but also brings another layer of satisfaction. Bubbles and popping bubbles are usually reminiscent of a feeling of nostalgia, of the days we would blow soap bubbles in the park, running after them to pop them. How many times have you seen children giggle and run after bubbles to pop them? Even our pets will run after them for the satisfaction of that pop. Playing with this idea helps layer the feelings and sensations I am trying to reach as a game designer to engage the player. 
 
 <img src="https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/cauldron-02.png" width="250"> ![Bubble pop animation, sprite by Arielle Wong, animation by Alexandre Godfroy](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/bubblePop.gif)
 
 *Image of the cauldron (main asset) and bubble animation mentionned above. The illustrations are both made in illustrator by Arielle Wong, and the bubble animation was made in after effects by Alexandre Godfroy (me).*
+
+Although some assets were already completed, the animations themselves were slightly polished to flow a bit better. 
 
 My gameplan as to create a script which I would attach to a prefab object that would first place the bubble at the cursor, then play the animation, and have the instance destroy itself. This would allow for the bubbles to properly be generated, play the animation, then avoid overcrowding by destroying itself. Using an instance also allows me to easily switch out the sprite/animation with another, if I want to implement the different bubble versions that we had originally made. 
 
@@ -160,6 +166,7 @@ public class BubbleManager : MonoBehaviour
 {
     private Animator animator; //for anim
     private SpriteRenderer spriteRenderer; //for visibility
+    private float speed = 0.2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Anim()
@@ -176,6 +183,13 @@ public class BubbleManager : MonoBehaviour
         //Destroys the object when the animation is done to ensure there is no overcrowding
         Destroy(gameObject);
     }
+
+    void Update()
+    {
+        //make the bubble float slightly as it is popping
+        transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+    }
+    
     
     IEnumerator Delay (float delay)
     {
@@ -184,7 +198,7 @@ public class BubbleManager : MonoBehaviour
 }
 ```
 
-This code allows me to, when instantiating the object, enable the animation, play it, and wait a delay to make sure the animation is complete. It then destroys the object to ensure that invisible objects don't keep crowding the viewport and allows for better performances. 
+This code allows me to, when instantiating the object, enable the animation, play it, and wait a delay to make sure the animation is complete. It then destroys the object to ensure that invisible objects don't keep crowding the viewport and allows for better performances. The Update() function also adds a slight upwards translation of the bubble, making it slightly more "juicy" and more satisfying. 
 
 ### BubblePop() - The Creation of the Objects
 
