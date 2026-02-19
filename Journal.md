@@ -144,4 +144,8 @@ To make sure I would know when the character is going up or down, I created a me
 
 This week, I chose to focus on reworking animations I had trouble with in my first game jam. At the time, it was my first time trying to instance objects and play animations on instanciated objects, so I had absolutely no idea how to do it. The game itself was a clicker, and I wanted to make a small bubble appear and pop whenever a click was registered. We had also originally created different variations of our assets, which would change/appear as the player would buy upgrades and multipliers in the shop. I think it would also be interesting to have some random bubbles popping over the cauldron in a passive manner.
 
-My gameplan as to create a script which I would attach to a prefab object that would first place the bubble at the cursor, then play the animation, and destroy itself.
+<img src="https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/cauldron-02.png" width="250"> ![Bubble pop animation, sprite by Arielle Wong, animation by Alexandre Godfroy](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/bubblePop.gif)
+
+Image of the cauldron (main asset) and bubble animation mentionned above. The illustrations are both made in illustrator by Arielle Wong, and the bubble animation was made in after effects by Alexandre Godfroy (me).
+
+My gameplan as to create a script which I would attach to a prefab object that would first place the bubble at the cursor, then play the animation, and have the instance destroy itself. This would allow for the bubbles to properly be generated, play the animation, then avoid overcrowding by destroying itself. Using an instance also allows me to easily switch out the sprite/animation with another, if I want to implement the different bubble versions that we had originally made. 
