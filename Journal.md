@@ -140,3 +140,8 @@ To make sure I would know when the character is going up or down, I created a me
     }
 ```
 
+## Week 5: Returning to an old game jam to review & fix animations
+
+This week, I chose to focus on reworking animations I had trouble with in my first game jam. At the time, it was my first time trying to instance objects and play animations on instanciated objects, so I had absolutely no idea how to do it. The game itself was a clicker, and I wanted to make a small bubble appear and pop whenever a click was registered. We had also originally created different variations of our assets, which would change/appear as the player would buy upgrades and multipliers in the shop. I think it would also be interesting to have some random bubbles popping over the cauldron in a passive manner.
+
+My gameplan as to create a script which I would attach to a prefab object that would first place the bubble at the cursor, then play the animation, and destroy itself.
