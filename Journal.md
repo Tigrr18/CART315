@@ -271,8 +271,27 @@ We also had a few games that we were looking at for aestethics, such as disco el
 After playing around with some images, we ended up [finalizing a palette and art style](https://www.figma.com/design/DMQOIKNevP8mTI4C5B4ILA/CART315-Look-feel-prototype-moodboard?node-id=1-2&t=T8cN86bUOYaafqvr-1), by choosing a few colors of our favorite images and unifying the color scheme between them. 
 
 Final color palette (top part):
-![color palette}(https://media.discordapp.net/attachments/1476287148352213063/1476669405302624347/IMG_2759.png?ex=69a1f70d&is=69a0a58d&hm=a07f8e58b937653f09d40a0121d74a222ac78e6c423038fb9e31dd88f1fa5270&=&format=webp&quality=lossless&width=1855&height=429)
+![color palette](https://media.discordapp.net/attachments/1476287148352213063/1476669405302624347/IMG_2759.png?ex=69a1f70d&is=69a0a58d&hm=a07f8e58b937653f09d40a0121d74a222ac78e6c423038fb9e31dd88f1fa5270&=&format=webp&quality=lossless&width=1855&height=429)
 
 To test this palette out, I made a sketch with this color palette, which ended up looking like this:
 
 ![look/feel sketch with final color palette](https://cdn.discordapp.com/attachments/1476287148352213063/1476678238620356630/Untitled_Artwork.png?ex=69a1ff47&is=69a0adc7&hm=d266c14f87481d34afbac72c51258b2805bb1bb79bd96cd3c4dca19157782dd4&)
+
+### Division of task
+
+This week, the division of tasks looked like this: 
+
+- Literature Review (Nadia)
+- Short story and fiction research (Nadia)
+- Game inspiration Research (Nadia & Nat)
+- Pinterest moodboarding (All, Mostly Nat)
+- Palette extraction (Alex)
+- Sketching (Alex)
+- Figma prototyping (ALL)
+
+### For Next Week
+
+- More sketching & finalizing the look
+- Testing the texturing in blender
+- Testing the way the colors will look lit in the engine
+- Start fleshing out the "story" of the game and understanding the mechanics behind it a bit more
