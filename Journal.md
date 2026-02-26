@@ -220,7 +220,7 @@ This code allows me to first get the x and y position of the mouse, and create a
 
 Find a game that you know well or are intrigued by. What decisions have the designers made that cause the game to be interesting? Where have they failed? Think mechanically rather than thematically. What ideas/methods/techniques do you think you could borrow for future projects?
 
-## Extra entry: Hollow KNight (original)
+## Extra entry: Hollow Knight (original)
 
 Hollow Knight is a platformer game released February 24, 2017. This game is widely known in the online community, joining game categories such as Metroidvania, platformer, and souls-like.
 
