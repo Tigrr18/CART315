@@ -216,3 +216,40 @@ void BubblePop() {
 ```
 
 This code allows me to first get the x and y position of the mouse, and create a vector at which the bubble object will be created. After being created, the GameObject calls the method shown [here](#bubblemanagercs---the-code-on-the-instantiated-objects). 
+
+
+Find a game that you know well or are intrigued by. What decisions have the designers made that cause the game to be interesting? Where have they failed? Think mechanically rather than thematically. What ideas/methods/techniques do you think you could borrow for future projects?
+
+## Extra entry: Hollow KNight (original)
+
+Hollow Knight is a platformer game released February 24, 2017. This game is widely known in the online community, joining game categories such as Metroidvania, platformer, and souls-like.
+
+The cutesy aesthetics of little bugs might be what first makes you start playing the game, but what determines player retention of this game is definitely its difficuly. Although some might be intimidated and abandon the game, most will continue playing the game *because* of its difficulty. The game is paced so that you have time to fully master a skill before getting a new one. As your skills improve, you discover new skills, such as different dashes, wall jumping, double jumping, ect. The slow release of the mechanics throughout gameplay allow for the player to take the time to fully engage with each mechanic, and makes sure that they aren't too overwhelmed by the game. 
+
+Another interesting aspect in the "release" of mechanics throughout the game is that through the path that is intended, they challenge your skill gradually. For example, in the tutorial area, there is platforms you must jump on to reach the continuation of the game. The platforms are placed so that each platform requires a slightly different jump to reach it. This creates a feelign of near-miss, which usually pushes the player to engage with the game even more. Since you do not lose much progress from missing (at least in the beginning of the game). As the game progresses, you lose more and more from each mistake, but knowing you were able to get there in the first place makes you believe that whatever that thing is, it is achieveable. 
+
+To go back to the jumping mechanic, it is pretty particular in this game, as there is an aspect of control with the time your spacbar is pressed. Basically, the longer you press your spacebar, the higher (and further) you will jump. Of course, there is a limit to that height and distance, but most games that use this type of mechanic don't penalise you for always using the jump at max force. In the tutorial area that i mentionned before, it is interesting, because the first few jumps encourage you to jump full force, but the last jump necessitates control, as full force will make you miss the platform entirely. Watching my mom try this area was very interesting, as she lacks most basic knowledge of games as she doesn't play them very often. The near misses encouraged her to try again and again, and although it took her some time to realize how to experiment with the mechanic, the game forced her to experiment with it to move on and progress with the game.
+
+Another really intersting mechanic that I have noticed with my personal gameplay of the game is the lack of health bar for bosses. Couppled with different boss phases, this encourages the player to always push further and forward. Every time you go a little further, you feel this sense of pride for beating this or that, just to be filled with dread of realizing that the boss indeed has another phase after the one you've been trying to beat for the past two hours. This really shows how sometimes, indicators aren't benificial to gameplay. Did I wish there was an indicator on phases or boss health to know how much I had left? Definitely, and multiple times. But I am certain that if they had been there, I definitely wouldn't have spent hours and hours on end on this same boss, losing the concept of time and being fulled by passion and rage. 
+
+## Week 6: Prototyping the final game
+
+# Brainstorming
+
+Nadia and I already had the idea to make a game together for this project. Our main ideas were the following:
+- How might we simulate the stress of student life
+- How might we make people realize the difficulties of going through life with disabilities
+- How to make an interesting rage game with new mechanics
+- How to repair the inner child through fantasy and nostalgic character design and narratives
+- How might we define the impacts of the "home" or frequently visited places
+- How might we manage executive dysfunction about everyday mundane tasks
+- How might we build a community through music and concerts
+
+During the 
+
+
+
+
+
+
+
