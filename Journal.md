@@ -234,7 +234,7 @@ Another really intersting mechanic that I have noticed with my personal gameplay
 
 ## Week 6: Prototyping the final game
 
-# Brainstorming
+### Brainstorming
 
 Nadia and I already had the idea to make a game together for this project. Our main ideas were the following:
 - How might we simulate the stress of student life
@@ -245,7 +245,15 @@ Nadia and I already had the idea to make a game together for this project. Our m
 - How might we manage executive dysfunction about everyday mundane tasks
 - How might we build a community through music and concerts
 
-During the 
+During the part of the workshops where we were being teamed up with other people and "shoving" words together, Nat and I came up with the combination of "omnipresence of pain" and "blinded". This lead us to conceptualizing a game in which the main character is our definition of "normal": No physical or mental disabilites, living a life with no aids, in a world where disabilities is the norm. The idea behind this concept is to uncover the blindness of "normal" people to the omnipresence of pain within a disabled person's life. 
+
+### The Idea
+
+As mentionned above, the main concept is to shift the perspective of the player, and using their normalcy against them. Within this game, we want to avoid getting specific in the portrayal of disabilities, as getting specific becomes touchy and will require a great amount of reasearch, which isn't quite realistic within the scope and timeline that we currently have for the game. 
+
+My personal connection to this topic comes from living with CKD (Chronic Kidney Disease) since birth, having a huge impact on my diet and the different medication I can or cannot take for mundane things (ex: I cannot take Advil). Adding to that is my diabetes, which was diagnosed in my teen years, in high-school. Navigating these new issues and problems within those critical years was definitely an experience, one that is extremely hard to understand without having lived through it. I also am diagnosed with ADHD, which has made monitoring my diabetes and general health issues much harder. 
+
+One thing we really want to convey with this game is the fact that living with the disability isn't just about the aspects to change in your personal life. That is indeed a big part of it, but what can really weight on you is the accessibility to spaces, the misunderstandings or stereotypes of your condition(s), the judgment or pity of others, and so much more. We really want to put emphasis on how phrases like "Oh this must be so hard" or "you're so perseverant, I could never" don't show the empathy people seem to think they do. These phrases are a reminder that if we do not live with those things, we simply don't live. We aren't resilient by choice, we are out of necessity, and being looked at differently simply for existing, and for doing things necessary for this existance can really take a toll on someone. 
 
 
 
