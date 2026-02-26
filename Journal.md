@@ -255,7 +255,10 @@ My personal connection to this topic comes from living with CKD (Chronic Kidney 
 
 One thing we really want to convey with this game is the fact that living with the disability isn't just about the aspects to change in your personal life. That is indeed a big part of it, but what can really weight on you is the accessibility to spaces, the misunderstandings or stereotypes of your condition(s), the judgment or pity of others, and so much more. We really want to put emphasis on how phrases like "Oh this must be so hard" or "you're so perseverant, I could never" don't show the empathy people seem to think they do. These phrases are a reminder that if we do not live with those things, we simply don't live. We aren't resilient by choice, we are out of necessity, and being looked at differently simply for existing, and for doing things necessary for this existance can really take a toll on someone. 
 
+### Ideation
 
+![image1](https://cdn.discordapp.com/attachments/1475989077202571472/1476301518058688532/image.png?ex=69a1f1ee&is=69a0a06e&hm=26a932be0deab5a8da3c9806007d25bb9353ceaa5f96cfaa99d26e119487dd8a&)
+![image2](https://cdn.discordapp.com/attachments/1475989077202571472/1476302112739557581/image.png?ex=69a1f27c&is=69a0a0fc&hm=e15f173c28ba0b36c65d84ce6eee322ac9d785a78a2e79efffcb7a3745b2d98c&)
 
 
 
