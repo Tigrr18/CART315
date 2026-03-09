@@ -295,3 +295,18 @@ This week, the division of tasks looked like this:
 - Testing the texturing in blender
 - Testing the way the colors will look lit in the engine
 - Start fleshing out the "story" of the game and understanding the mechanics behind it a bit more
+
+## Week 7: Furthering prototypes, testing methods and starting to build assets
+
+During the two weeks between classes, we had the time to do quite a few things. My main task during this period was to further test the art direction of the game. I ended up doing some texturing tests on both Blender and Procreate (using the 3D function), drawing some 2D assets, as well as designing some NPC characters.
+
+### 3D texturing tests
+
+#### Blender
+For the texture test in Blender, it took quite a while to figure out how to get the texture paint function working. I first tried to completely delete all textures from an existing textured asset I had previously made for a game jam. This asset, a book, was textured using some proceduraly generated materials. Removing the textures did not work and would simply make the texture purple. I ended up creating a copy of the file and simply painting over the existing paint effects, and removing some of the paint nodes such as the roughness, as a leather texture on a painterly object didnt feel quite right. I didn't really like the effect that it gave me, as the "paintbrush" was impossible to change, and had very little size/opacity feedback, even when using a graphic tablet with pen pressure. Despite that, it proved to me that hand texturing our assets would definitely be interesting for the project, as it really gives an interesting aspect to it
+[insert link to book image]()
+
+#### Procreate
+For the texture tests in Procreate, I attempted to texture the bench that Nadia made this week. 
+
+
