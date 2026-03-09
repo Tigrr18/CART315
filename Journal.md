@@ -1,5 +1,5 @@
 # Journal
-
+[Week 1](#week-1:-make-a-thing) | [Week 2] (#week-2:-catchamall)
 ## Week 1: Make a Thing
 
 I originally thought about making a small game on bitsby or another platform that I knew nothing about. After exploring my options, I felt a bit limited, and preferred acquiring new knowledge in a platform I was already fairly comfortable in rather than learning a new platform that I would probably never use again. 
