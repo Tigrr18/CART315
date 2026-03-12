@@ -315,10 +315,28 @@ I did a few texture/lighting sketches to have an idea how the characters would l
 
 I also made sketches for four different NPCs that would be present in the game. All of these sketches are front facing, and were made with a mirror tool to make the process faster. This will also make the 3D modelling process much easier, and we will add imperfections and asymetry after sculpting, and we will also add some in the texturing process. So far, I also made a side profile for one of the characters, to make sure we have everything we need for the basic scuplting. I will make some outfit/body sketches after all side profiles for the four NPCs are completed. 
 ![NPC sketches](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/NPC%20sketches.png)
-![side profile sketch]()
+![side profile sketch](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/side%20profile.png)
 
 I also fixed up/modified the leaf drawing for the tree that Nadia made. 
 ![leaf drawing](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/Leaf.png)
 
+### Division of task
 
+This week, the division of tasks looked like this: 
+
+- Narrative script & Dialogue (Nat)
+- Character personality sketches (Nat - In progress)
+- NPC Drafting (Alex)
+- Texturing (Alex)
+- Sculpting & Hard modeling (Nadia)
+- Unity level design (Nadia - In progress)
+- Mechanics finalization (All)
+- Gameplay finalisation (All)
+
+### For Next Week
+
+- Finish side profile of characters
+- Test out texturing in Procreate with new, better unwrapped objects
+- design NPC bodies
+- help out on 3D modelling as needed
 
