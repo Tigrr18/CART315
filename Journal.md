@@ -298,7 +298,12 @@ This week, the division of tasks looked like this:
 
 ## Week 7: Furthering prototypes, testing methods and starting to build assets
 
-During the two weeks between classes, we had the time to do quite a few things. My main task during this period was to further test the art direction of the game. I ended up doing some texturing tests on both Blender and Procreate (using the 3D function), drawing some 2D assets, as well as designing some NPC characters.
+During the two weeks between classes, we had the time to do quite a few things. We started off by meeting on sunday and brainstorming the game further. We discussed different mechanics, as well as the different spaces the game would take place in. We made a list of assets & narrative elements needed within the different spaces. 
+![photo of the brainstorm on the TAG whiteboard](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/brainstorm.jpg)
+
+The game would consist of a few different "rooms", including an outside area that would connect all of them together. There would be a cafe, an office, a clinic, and a bedroom to represent different areas of the life of the main character. The idea is to make the character feel more and more distress, and end the game in a "familiar" environment which is their room. We were also thinking of making the palette grow colder as the game progresses, to finish with a warm toned room at the end.
+
+My main task after that was to further test the art direction of the game. I ended up doing some texturing tests on both Blender and Procreate (using the 3D function), drawing some 2D assets, as well as designing some NPC characters.
 
 ### 3D texturing tests
 
