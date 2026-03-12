@@ -234,6 +234,8 @@ Another really intersting mechanic that I have noticed with my personal gameplay
 
 ## Week 6: Prototyping the final game
 
+*Note: While sending in week 7, I have noticed that the images of week 6 unlinked due to using the discord links for the images. I will be cleaning up ad replacing the pictures during the week.*
+
 ### Brainstorming
 
 Nadia and I already had the idea to make a game together for this project. Our main ideas were the following:
