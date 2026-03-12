@@ -307,6 +307,15 @@ For the texture test in Blender, it took quite a while to figure out how to get 
 [insert link to book image]()
 
 #### Procreate
-For the texture tests in Procreate, I attempted to texture the bench that Nadia made this week. 
+For the texture tests in Procreate, I attempted to texture the bench that Nadia made this week. There was quite a few issues with the texturing, due to the way the model was exported. Essentially, the problem was that all the elements shared the same texture png, which already is a huge issue, but also the elements that repeat themselves were not alligned, which meant the textuing was all over the place. Nadia did reexport the model, but I unfortunately didn't get the time to retry it. 
+[insert link to bench image]()
+
+### 2D Sketches
+I did a few texture/lighting sketches to have an idea how the characters would look and be rendered. The bald head was simply to test out the color palette and style, and the old woman was to see how it would look with one of my sketches. 
+
+I also made sketches for four different NPCs that would be present in the game. All of these sketches are front facing, and were made with a mirror tool to make the process faster. This will also make the 3D modelling process much easier, and we will add imperfections and asymetry after sculpting, and we will also add some in the texturing process. So far, I also made a side profile for one of the characters, to make sure we have everything we need for the basic scuplting. I will make some outfit/body sketches after all side profiles for the four NPCs are completed. 
+
+I also fixed up/modified the leaf drawing for the tree that Nadia made. 
+
 
 
