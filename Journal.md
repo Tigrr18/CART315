@@ -353,4 +353,11 @@ This week, I was limited in how much I could do, due to having a lot of deadline
 
 ### Sketching
 
+I sketched the side profile of the old lady NPC that will be in the game. I had some trouble drawing her because I had never drawn a character with wrinkles before, so it was a challenge to do that. I needed to look up and study a lot of references to understand hwo the skin would stretch over the face, and how it would fall and drape over itself. I also struggled to determine how much I wanted to push the wrinkles, becasue I did not want the character to feel like a cartoon, but I still want the character's appearance to give a glimpse into their life, into their personality, so I do want to exaggerate some traits to put emphasis on certain aspects of the character. 
+
+The proportions of this charater were also hard to achieve, because I tried to make the skull look a little too small for its shape, which was very hard to translate into the side profile. I really wanted to give a little old wrinkled grandma vibe, but also didn't want to dive into stereotypes. 
+
+### 3D texturing
+
+First, I tried texturing the model of the bench again, with a newly exported file, which had modified UV mappings.
 
