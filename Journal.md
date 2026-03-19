@@ -347,3 +347,10 @@ This week, the division of tasks looked like this:
 - design NPC bodies
 - help out on 3D modelling as needed
 
+## Week 8: More sketching and texturing
+
+This week, I was limited in how much I could do, due to having a lot of deadlines on different projects, as well as developping carpel tunnel on my left hand, limitting my capacity to type, draw and generally use my computer. 
+
+### Sketching
+
+
