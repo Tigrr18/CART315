@@ -359,5 +359,5 @@ The proportions of this charater were also hard to achieve, because I tried to m
 
 ### 3D texturing
 
-First, I tried texturing the model of the bench again, with a newly exported file, which had modified UV mappings.
+First, I tried texturing the model of the bench again, with a newly exported file, which had modified UV mappings. This didn't quite work out, as the materials had not been properly reassigned. Some of the planks had the same materials as some  of the rivets, which would make some UV mappings overlap, leading to some very weird effects 
 
