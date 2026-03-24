@@ -261,12 +261,13 @@ One thing we really want to convey with this game is the fact that living with t
 
 Nat, Nadia and I first started working on figuring out the aesthetic and feel for the game. We did so by making a [Pinterest page](https://pin.it/4Qoxg9Ad0). Notable images from our search are the following:
 
-![image1](https://cdn.discordapp.com/attachments/1475989077202571472/1476301518058688532/image.png?ex=69a1f1ee&is=69a0a06e&hm=26a932be0deab5a8da3c9806007d25bb9353ceaa5f96cfaa99d26e119487dd8a&)
-![image2](https://cdn.discordapp.com/attachments/1475989077202571472/1476302112739557581/image.png?ex=69a1f27c&is=69a0a0fc&hm=e15f173c28ba0b36c65d84ce6eee322ac9d785a78a2e79efffcb7a3745b2d98c&)
-![image3](https://cdn.discordapp.com/attachments/1475989077202571472/1476302795127914526/image.png?ex=69a1f31e&is=69a0a19e&hm=05bdf5377952d3b4c4de2ad12a6a41e55b458c8123a22695ccc281c67ebf40a1&)
-![image3](https://media.discordapp.net/attachments/1475989077202571472/1476302823342997624/image.png?ex=69a1f325&is=69a0a1a5&hm=92f4859154c2bc20c428147d094ce810f9600b2fdf5297a10633e6a939987efe&=&format=webp&quality=lossless&width=794&height=911)
-![image4](https://cdn.discordapp.com/attachments/1475989077202571472/1476304238341656808/image.png?ex=69a1f476&is=69a0a2f6&hm=6efd2500244240d71943d8c62f915a93c00bdfd3e9d757e4fd0bd0bd9e780bab&)
-![image5](https://cdn.discordapp.com/attachments/1475989077202571472/1476304313671487580/image.png?ex=69a1f488&is=69a0a308&hm=5e03227f315f2f31dbfc0ab098a9046c5268a6f34d9e7759965be192cca458d4&)
+![image1](Images & Videos/inspo1.png)
+![image2](Images & Videos/inspo2.png)
+![image3](Images & Videos/inspo3.png)
+![image4](Images & Videos/inspo4.png)
+![image5](Images & Videos/inspo5.png)
+![image6](Images & Videos/inspo6.png)
+![image7](Images & Videos/inspo7.png)
 
 We also had a few games that we were looking at for aestethics, such as disco elysium (shown in the pictures above) and others on the way they are approaching the matter. We also looked at some literature that approaches the matter of disabilities and shift and ability. This can all be found in the following [link](https://www.figma.com/board/96Agl9qXBoQBG0pwlN38Df/CART315-look-feel-prototype?node-id=0-1&t=ECnj30gX93joJRnS-1).
 
