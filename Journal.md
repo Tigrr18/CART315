@@ -261,24 +261,24 @@ One thing we really want to convey with this game is the fact that living with t
 
 Nat, Nadia and I first started working on figuring out the aesthetic and feel for the game. We did so by making a [Pinterest page](https://pin.it/4Qoxg9Ad0). Notable images from our search are the following:
 
-![image1](Images & Videos/inspo1.png)
-![image2](Images & Videos/inspo2.png)
-![image3](Images & Videos/inspo3.png)
-![image4](Images & Videos/inspo4.png)
-![image5](Images & Videos/inspo5.png)
-![image6](Images & Videos/inspo6.png)
-![image7](Images & Videos/inspo7.png)
+![image1](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo1.png)
+![image2](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo2.png)
+![image3](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo3.png)
+![image4](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo4.png)
+![image5](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo5.png)
+![image6](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo6.png)
+![image7](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/inspo7.png)
 
 We also had a few games that we were looking at for aestethics, such as disco elysium (shown in the pictures above) and others on the way they are approaching the matter. We also looked at some literature that approaches the matter of disabilities and shift and ability. This can all be found in the following [link](https://www.figma.com/board/96Agl9qXBoQBG0pwlN38Df/CART315-look-feel-prototype?node-id=0-1&t=ECnj30gX93joJRnS-1).
 
 After playing around with some images, we ended up [finalizing a palette and art style](https://www.figma.com/design/DMQOIKNevP8mTI4C5B4ILA/CART315-Look-feel-prototype-moodboard?node-id=1-2&t=T8cN86bUOYaafqvr-1), by choosing a few colors of our favorite images and unifying the color scheme between them. 
 
 Final color palette (top part):
-![color palette](https://media.discordapp.net/attachments/1476287148352213063/1476669405302624347/IMG_2759.png?ex=69a1f70d&is=69a0a58d&hm=a07f8e58b937653f09d40a0121d74a222ac78e6c423038fb9e31dd88f1fa5270&=&format=webp&quality=lossless&width=1855&height=429)
+![color palette](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/palette.png)
 
 To test this palette out, I made a sketch with this color palette, which ended up looking like this:
 
-![look/feel sketch with final color palette](https://cdn.discordapp.com/attachments/1476287148352213063/1476678238620356630/Untitled_Artwork.png?ex=69a1ff47&is=69a0adc7&hm=d266c14f87481d34afbac72c51258b2805bb1bb79bd96cd3c4dca19157782dd4&)
+![look/feel sketch with final color palette](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/look-feel%20prototype.png)
 
 ### Division of task
 
