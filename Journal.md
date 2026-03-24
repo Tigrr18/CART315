@@ -361,3 +361,6 @@ The proportions of this charater were also hard to achieve, because I tried to m
 
 First, I tried texturing the model of the bench again, with a newly exported file, which had modified UV mappings. This didn't quite work out, as the materials had not been properly reassigned. Some of the planks had the same materials as some  of the rivets, which would make some UV mappings overlap, leading to some very weird effects 
 
+![bench messup 2]()
+
+After trying to make it work, I decided to try my hand at a different asset, and ended up texturing the tree asset that Nadia had made last week, which is a singular object, which removes the issues of objects overlapping on the UV mapping. 
