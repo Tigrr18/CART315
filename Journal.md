@@ -79,6 +79,8 @@ I messed around with having a timer or not, but ended up deciding against it. I 
 
 It ended up working much better after all the debuging.
 
+[Back to Top](#journal)
+
 ## Week 4: 
 
 This week, I first tried to establish a UI for the breakout game that we played around with in class. I had some trouble getting the buttons and the scenes linked properly, but ended up making it work. I had some issues with properly linking the buttons, but ended up figuring it out after watching a tutorial. Switching the scenes around wasn't too difficult, it was one of the easier parts for me. I also tested out importing different fonts into Unity. Figuring out how to install the fonts properely was a bit of a challenge, but it ended up being worth it.
