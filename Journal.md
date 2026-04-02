@@ -16,6 +16,8 @@ To increase replayability and allow for better players to feel like they can get
 
 In terms of end of the game, the game ends after 10 failed notes. At the 10th failed notes, existing notes will despawn and the game will no longer spawn arrows. When resetting the game, it respawns all parameters and allows for arrows to be spawned again. 
 
+[Back to Top](#journal)
+
 ## Week 2: CatchAMall
 
 Due to the similarity to my previous project, I attempted to continue the CatchAMall exercise without looking at the project available on the Github. 
