@@ -365,3 +365,17 @@ First, I tried texturing the model of the bench again, with a newly exported fil
 ![bench messup 2]()
 
 After trying to make it work, I decided to try my hand at a different asset, and ended up texturing the tree asset that Nadia had made last week, which is a singular object, which removes the issues of objects overlapping on the UV mapping. 
+
+## Week 9
+
+This week, I started setting up the unity. I had never done 3D in unity before, so i was using the following tutorials: [First tutorial](https://www.youtube.com/watch?v=41MD0s9FiXI), [Second tutorial](https://www.youtube.com/watch?v=vBWcb_0HF1c).
+
+I ended up mostly using the second tutorial, as that is what Nadia had first started to do, and the way the controls were assigned seemed more flexible. I didn't go very far because of a lack of time this week, with a lot of projects due at the same time as well as a lot of built up anxiety and exhaustion.
+
+To be honest, I struggled with a lot of procrastination this week, as well as having to deal with a few personal issues. 
+
+For next week, I plan to work some more on the player movement, as well as set up the decor.
+
+## Week 10
+
+
