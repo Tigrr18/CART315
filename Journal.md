@@ -28,6 +28,8 @@ The scoring mechanics are simple. First, the game fails if an object goes past a
 
 Overall, I think this week's work allowed me to refamiliarize myself with areas of Unity I haven't touched in a while, such as the colliders and RigidBody. I look forward to learning more about them and using them more confidently and efficiently
 
+[Back to Top](#journal)
+
 ## Week 3: Prototyping mechanics
 
 First of all, I wanted to try to play around with the "Pawng" game that we had studied in class. I had a few ideas on how the mechanics could be changed and played with in an interesting way:
@@ -142,6 +144,8 @@ To make sure I would know when the character is going up or down, I created a me
     }
 ```
 
+[Back to Top](#journal)
+
 ## Week 5: Returning to an old game jam to review & fix animations
 
 This week, I chose to focus on reworking animations I had trouble with in my first game jam. At the time, it was my first time trying to instance objects and play animations on instanciated objects, so I had absolutely no idea how to do it. The game itself was a clicker, and I wanted to make a small bubble appear and pop whenever a click was registered. We had also originally created different variations of our assets, which would change/appear as the player would buy upgrades and multipliers in the shop. I think it would also be interesting to have some random bubbles popping over the cauldron in a passive manner. 
@@ -234,6 +238,8 @@ To go back to the jumping mechanic, it is pretty particular in this game, as the
 
 Another really intersting mechanic that I have noticed with my personal gameplay of the game is the lack of health bar for bosses. Couppled with different boss phases, this encourages the player to always push further and forward. Every time you go a little further, you feel this sense of pride for beating this or that, just to be filled with dread of realizing that the boss indeed has another phase after the one you've been trying to beat for the past two hours. This really shows how sometimes, indicators aren't benificial to gameplay. Did I wish there was an indicator on phases or boss health to know how much I had left? Definitely, and multiple times. But I am certain that if they had been there, I definitely wouldn't have spent hours and hours on end on this same boss, losing the concept of time and being fulled by passion and rage. 
 
+[Back to Top](#journal)
+
 ## Week 6: Prototyping the final game
 
 *Note: While sending in week 7, I have noticed that the images of week 6 unlinked due to using the discord links for the images. I will be cleaning up ad replacing the pictures during the week.*
@@ -301,6 +307,8 @@ This week, the division of tasks looked like this:
 - Testing the way the colors will look lit in the engine
 - Start fleshing out the "story" of the game and understanding the mechanics behind it a bit more
 
+[Back to Top](#journal)
+
 ## Week 7: Furthering prototypes, testing methods and starting to build assets
 
 During the two weeks between classes, we had the time to do quite a few things. We started off by meeting on sunday and brainstorming the game further. We discussed different mechanics, as well as the different spaces the game would take place in. We made a list of assets & narrative elements needed within the different spaces. 
@@ -350,6 +358,8 @@ This week, the division of tasks looked like this:
 - design NPC bodies
 - help out on 3D modelling as needed
 
+[Back to Top](#journal)
+
 ## Week 8: More sketching and texturing
 
 This week, I was limited in how much I could do, due to having a lot of deadlines on different projects, as well as developping carpel tunnel on my left hand, limitting my capacity to type, draw and generally use my computer. 
@@ -368,6 +378,8 @@ First, I tried texturing the model of the bench again, with a newly exported fil
 
 After trying to make it work, I decided to try my hand at a different asset, and ended up texturing the tree asset that Nadia had made last week, which is a singular object, which removes the issues of objects overlapping on the UV mapping. 
 
+[Back to Top](#journal)
+
 ## Week 9
 
 This week, I started setting up the unity. I had never done 3D in unity before, so i was using the following tutorials: [First tutorial](https://www.youtube.com/watch?v=41MD0s9FiXI), [Second tutorial](https://www.youtube.com/watch?v=vBWcb_0HF1c).
@@ -378,6 +390,12 @@ To be honest, I struggled with a lot of procrastination this week, as well as ha
 
 For next week, I plan to work some more on the player movement, as well as set up the decor.
 
+[Back to Top](#journal)
+
 ## Week 10
+
+As mentionned in last week's journal, the goal for this week was to setup the Unity once and for all. Unfortunately, due to end of session, I could not get to worrking on this before the Thursday (today). 
+
+[Back to Top](#journal)
 
 
