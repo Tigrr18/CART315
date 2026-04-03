@@ -1,5 +1,5 @@
 # Journal
-[Week 1](#week-1:-make-a-thing) | [Week 2](#week-2:-catchamall) | [Week 3](#week-3-prototyping-mechanics) | [Week 4](#week-4) | [Week 5](#week-5-returning-to-an-old-game-jam-to-review--fix-animations) | [Extra Entry](#extra-entry-hollow-knight-original) | [Week 6](#week-6-prototyping-the-final-game) | [Week 7](#week-7-furthering-prototypes-testing-methods-and-starting-to-build-assets) | [Week 8](#week-8-more-sketching-and-texturing) | [Week 9](#week-9) | [Week 10](#week-10)
+[Week 1](#week-1:-make-a-thing) | [Week 2](#week-2:-catchamall) | [Week 3](#week-3-prototyping-mechanics) | [Week 4](#week-4) | [Week 5](#week-5-returning-to-an-old-game-jam-to-review--fix-animations) | [Extra Entry](#extra-entry-hollow-knight-original) | [Week 6](#week-6-prototyping-the-final-game) | [Week 7](#week-7-furthering-prototypes-testing-methods-and-starting-to-build-assets) | [Week 8](#week-8-more-sketching-and-texturing) | [Week 9](#week-9) | [Week 10](#week-10-unity-unity-unity-did-i-mention-unity)
 ## Week 1: Make a Thing
 
 I originally thought about making a small game on bitsby or another platform that I knew nothing about. After exploring my options, I felt a bit limited, and preferred acquiring new knowledge in a platform I was already fairly comfortable in rather than learning a new platform that I would probably never use again. 
