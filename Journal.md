@@ -388,7 +388,7 @@ After trying to make it work, I decided to try my hand at a different asset, and
 
 This week, I started setting up the unity. I had never done 3D in unity before, so i was using the following tutorials: [First tutorial](https://www.youtube.com/watch?v=41MD0s9FiXI), [Second tutorial](https://www.youtube.com/watch?v=vBWcb_0HF1c).
 
-I ended up mostly using the second tutorial, as that is what Nadia had first started to do, and the way the controls were assigned seemed more flexible. I didn't go very far because of a lack of time this week, with a lot of projects due at the same time as well as a lot of built up anxiety and exhaustion.
+I ended up using the second tutorial, as that is what Nadia had first started to do, and the way the controls were assigned seemed more flexible. I didn't go very far because of a lack of time this week, with a lot of projects due at the same time as well as a lot of built up anxiety and exhaustion. The part that I did complete from that tutorial was the input system with the Input Action Editor, where I set up the Movement, Rotation, Jumping and Sprint. 
 
 To be honest, I struggled with a lot of procrastination this week, as well as having to deal with a few personal issues. 
 
@@ -396,9 +396,72 @@ For next week, I plan to work some more on the player movement, as well as set u
 
 [Back to Top](#journal)
 
-## Week 10
+## Week 10: Unity, Unity, Unity... Did I Mention Unity?
 
-As mentionned in last week's journal, the goal for this week was to setup the Unity once and for all. Unfortunately, due to end of session, I could not get to worrking on this before the Thursday (today). 
+As mentionned in last week's journal, the goal for this week was to setup the Unity once and for all. Unfortunately, due to end of session, I could not get to worrking on this before the Thursday (today). I finished going through [the tutorial mentionned last week](https://www.youtube.com/watch?v=vBWcb_0HF1c), which ended up giving me a nice player movement & camera handling. 
+
+### Issues and Hardships
+
+Going through the tutorial was fairly straightforward and easy, especially with my different extentions on VS Code, which had some impressive level of autocomplete. Combined with my fast typing speed, I was almost able to go at the speed of the tutorial itself, without pausing (or well, let's be honest, it took me twice the length of the tutorial, but that's still better than having to rewind 3 times every step). 
+
+The first issue I ran into was that the tutorial was using headers for the different parameters of the scripts to keep it clean within the Unity, but somehow I was getting some issues with them. I originally thought I was missing a semicolon at the end, but no, it didn't need any. I looked into the specific error, and it said that the header couldn't be found. After some internet digging, I figured I hadn't imported the right namespaces/libraries or something, but headers are part of "using UnityEngine", which was indeed at the top of my code. But what could be the issue?
+
+```C#
+    [header("Input Action Assets")]
+    [SerializeField] private InputActionAsset playerControls;
+
+    [header("Action Map Name Reference")]
+    [SerializeField] private string actionMapName = "Player";
+
+    [header("Action Name References")]
+    [SerializeField] private string movement = "Movement";
+    [SerializeField] private string jump = "Jumping";
+    [SerializeField] private string sprint = "Sprint";
+    [SerializeField] private string rotation = "Rotation";
+```
+
+...Oh. The header was missing a capitalization, it's spelled "Header", not "header". It was one of those mistakes that makes you feel totally dumb. Oh well!
+
+
+Then, after some code cleanup, there was another error that popped up when trying to run the game:
+
+```
+NullReferenceException: Object reference not set to an instance of an object
+PlayerInputHandler.SubscribeActionValuesToInputEvents () (at Assets/Scripts/PlayerInputHandler.cs:48)
+PlayerInputHandler.Awake () (at Assets/Scripts/PlayerInputHandler.cs:40)
+```
+
+The corresponding method is the following, with the specific line being the commented line:
+
+```C#
+    private void SubscribeActionValuesToInputEvents()
+    {
+        movementAction.performed += inputInfo => MovementInput = inputInfo.ReadValue<Vector2>();
+        movementAction.canceled += inputInfo => MovementInput = Vector2.zero;
+
+        //jumpAction.performed += inputInfo => JumpTriggered = true;
+        jumpAction.canceled += inputInfo => JumpTriggered = false;
+
+        sprintAction.performed += inputInfo => SprintTriggered = true;
+        sprintAction.canceled += inputInfo => SprintTriggered = false;
+
+        rotationAction.performed += inputInfo => RotationInput = inputInfo.ReadValue<Vector2>();
+        rotationAction.canceled += inputInfo => RotationInput = Vector2.zero;
+    }
+```
+
+I tried going back up to the Action Name References, since I may had named the variables improperly:
+```C#
+    [Header("Action Name References")]
+    [SerializeField] private string movement = "Movement";
+    [SerializeField] private string jump = "Jumping"; //used to be "Jump", which didn't correspond in the Input Action Editor
+    [SerializeField] private string sprint = "Sprint";
+    [SerializeField] private string rotation = "Rotation";
+```
+
+I also checked if I had properly attached the Input Action Component to the script, and I did, everything seemed linked properly, so I am still unsure of what I can do to fix this bug. I will probably try to fix it durring the next week.
+
+For next week, I want to focus on fixing the player movement, and making the UI, as well as making sure that the environment is properly blocked. 
 
 [Back to Top](#journal)
 
