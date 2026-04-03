@@ -390,7 +390,7 @@ This week, I started setting up the unity. I had never done 3D in unity before, 
 
 I ended up using the second tutorial, as that is what Nadia had first started to do, and the way the controls were assigned seemed more flexible. I didn't go very far because of a lack of time this week, with a lot of projects due at the same time as well as a lot of built up anxiety and exhaustion. The part that I did complete from that tutorial was the input system with the Input Action Editor, where I set up the Movement, Rotation, Jumping and Sprint. 
 
-![Input Action Editor](Images & Videos/InputActionEditor_Screenshot.png)
+![Input Action Editor](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/InputActionEditor_Screenshot.png)
 
 To be honest, I struggled with a lot of procrastination this week, as well as having to deal with a few personal issues. 
 
@@ -462,7 +462,7 @@ I tried going back up to the Action Name References, since I may had named the v
 ```
 
 The names in the file are as follow:
-![Input Action Editor](Images & Videos/InputActionEditor_Screenshot.png)
+![Input Action Editor](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/InputActionEditor_Screenshot.png)
 
 I also checked if I had properly attached the Input Action Component to the script, and I did, everything seemed linked properly, so I am still unsure of what I can do to fix this bug. I will probably try to fix it durring the next week.
 
