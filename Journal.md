@@ -470,4 +470,26 @@ For next week, I want to focus on fixing the player movement, and making the UI,
 
 [Back to Top](#journal)
 
+## Week 11: More Unity & bug fixing
 
+This week my goal was to clean up some of the unity and adapto some of the existing elements that Nat and Nadia had implemented, and implement them in a cleaner, more robust way.
+
+### The Main Menu
+
+Nat had already made the basics for the main menu, such as the UI Documents containing all the buttons and such. It was already implemented in the main scene, but the issue was that you could technically start playing the game without ever hitting start, as the game was playing in the background of the menu. To resolve this issue, I created an entirely new scene for the main menu, and linked the start button to the new scene> I also modified a background that I had made a year or so ago into the color pallet of the game. I used this as the background for the menu.
+
+Figuring out how to use the UI toolkit was a bit challenging, because I had only worked with the canevas in Unity prior to this game. Through Nat's existing code and the [video ressource](https://www.youtube.com/watch?v=_jtj73lu2Ko) he provided, I was able to quickly figure out how it worked and how to adapt the main menu. Linking the load of a new scene on press of the start button was fairly easy as I had previously done it in other projects. The only issue is that it would sometimes bug on the computers of my teammates even after pulling from the GitHub, due to differences in loaded scene numbering. That is not a huge issue though, as it is a quick changes that needs to be done before building, but doesn't impact the thing itself much. 
+
+Learning about the UI toolkit also allowed me to give some tips and tricks to Olivia, who was looking to make an inventory system for her game. I explained how the toolkit worked with containers, and how you could easily access the container with code, and that using an array of sprites for the different objects should be fairly simple. 
+
+### Terrain
+
+Nadia had already done a great job creating the town square, but when testing it, I noticed that the frame rate was very very low. I figured it was because there was a lot of trees being spawned in, which were quite high poly. I noticed an area completely outside of the square where there was a mount with a ring of trees, which was of no use for us. Since Nadia was using terrain with a height based scatter for the trees (trees spawning only between certain specific heights), I adapted the terrain and flattened it to remove all of the unwanted instances of trees. I also modified the spawning parameters of the trees to make them a bit less dense and more randomized, as it felt more like a dense forest than a park. I think for next week, I could scatter them even more, and maybe reduce the overall size of the map, as well as add some invisible walls, as the map is currently not closed. Some other detail we noticed is that the player has a shadow, but it shows the capsule that it is instead of a humain shape, which looks a little odd. We also have some proportion issues, where the character is much smaller than the NPC.
+
+### The Dialogue
+
+Nat had implemented a dialogue function, but it only really worked with one line. To accomodate to having more than one dialogue option, and more than one NPC, I decided to expland on the dialogue options, and started creating my own custom data structure to support it. I started this part in class, and got quite a bit done, but when I left class I still had some errors in the code that weren't allowing me to compile properly. I still had no idea if my system would work, but thats what iterating is about haha.
+
+### Goals for next week
+
+My main goal is definitely to make sure that i can implement the new dialogue function, and I will continue building it off of what Nat has constructed. 
