@@ -550,5 +550,5 @@ My main goal is definitely to make sure that i can implement the new dialogue fu
 
 As mentionned in last week's journal, my mian goal this week was to finish my custom dialogue structure, which I had blindly jumped into last week, without really looking anything up, brute forcing with absolute confidence in my abilities. I had a very clear idea of what I wanted, but there was several elements that I had not considered. Here are some basic "napkin notes" I made to develop my concept:
 
-![napkin1]()
-![napkin2]()
+![napkin1](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/napkin1.jpg)
+![napkin2](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/napkin2.jpg)
