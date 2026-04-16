@@ -490,6 +490,56 @@ Nadia had already done a great job creating the town square, but when testing it
 
 Nat had implemented a dialogue function, but it only really worked with one line. To accomodate to having more than one dialogue option, and more than one NPC, I decided to expland on the dialogue options, and started creating my own custom data structure to support it. I started this part in class, and got quite a bit done, but when I left class I still had some errors in the code that weren't allowing me to compile properly. I still had no idea if my system would work, but thats what iterating is about haha.
 
+Here is my implementation for a new object type specifically made for the dialogue:
+
+```C#
+using UnityEngine;
+using System.Collections.Generic;
+
+public class Dialogue_Object
+{
+    //list of string arrays. Each array contains the name of the character [0] and the line that they say [1].
+    //this represents a block of dialogue. Each character will then have an arraya of DialogueObject that represent the different blocks they can say
+    private List <string[]> dialogueLines;
+
+    //default constructor
+    public Dialogue_Object(){ 
+        dialogueLines = new List<string[]>();
+    }
+
+    //Copy constructor
+    public Dialogue_Object(List<string[]> dialogueLines){ 
+        this.dialogueLines = dialogueLines;
+    }
+
+    //get block of dialogue
+    public List<string[]> GetDialogueLines(){
+        return dialogueLines;
+    }
+
+    // get specific dialogue line
+    public string[] GetDialogueLines(int index){
+        return dialogueLines[index];
+    }
+
+    // The next two functions allow to add lines to the dialogue block in two different ways, to allow me to use whatever way I find convenient at the moment of adding in lines
+    // Ideally, I should eventually make a code that takes in a .csv or a .json that contains the dialogue lines for the characters
+    // I haven't done that yet, for now the dialogue is hard coded into a different file, such great practice lol
+
+    // add a line to the end of the block using an array
+    public void NewDialogueLines(string[] line){
+        dialogueLines.Add(line);
+    }
+
+    // add a line to the end of the block using two different strings
+    public void AddTextLine(string speaker, string line){
+        dialogueLines.Add(new string[] {speaker, line});
+    }   
+
+}
+
+```
+
 ### Goals for next week
 
 My main goal is definitely to make sure that i can implement the new dialogue function, and I will continue building it off of what Nat has constructed. 
