@@ -552,3 +552,11 @@ As mentionned in last week's journal, my mian goal this week was to finish my cu
 
 ![napkin1](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/napkin1.jpg)
 ![napkin2](https://github.com/Tigrr18/CART315/blob/main/Images%20%26%20Videos/napkin2.jpg)
+
+The first image represents the different elements I was thinking of using to establish this. I was essentially thinking of doing a prefab "NPC", which we would change the 3d model of, and the character name. I pivoted from that original idea, which I will explain a bit later. Another important thing was implementing the talk animation for the character. 
+
+For the second picture, we see how i was intending to make this datastructure. I was originally planning on making an array with a size of the number of NPCs. Each NPC would have their own index, in which a list of dialogue blocks would be present. 
+
+### Data structure oversights
+
+While I did attempt to complete the dialogue options the way I originally intended
