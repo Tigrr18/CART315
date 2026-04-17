@@ -1,5 +1,5 @@
 # Journal
-[Week 1](#week-1:-make-a-thing) | [Week 2](#week-2:-catchamall) | [Week 3](#week-3-prototyping-mechanics) | [Week 4](#week-4) | [Week 5](#week-5-returning-to-an-old-game-jam-to-review--fix-animations) | [Extra Entry](#extra-entry-hollow-knight-original) | [Week 6](#week-6-prototyping-the-final-game) | [Week 7](#week-7-furthering-prototypes-testing-methods-and-starting-to-build-assets) | [Week 8](#week-8-more-sketching-and-texturing) | [Week 9](#week-9) | [Week 10](#week-10-unity-unity-unity-did-i-mention-unity)
+[Week 1](#week-1:-make-a-thing) | [Week 2](#week-2:-catchamall) | [Week 3](#week-3-prototyping-mechanics) | [Week 4](#week-4) | [Week 5](#week-5-returning-to-an-old-game-jam-to-review--fix-animations) | [Extra Entry](#extra-entry-hollow-knight-original) | [Week 6](#week-6-prototyping-the-final-game) | [Week 7](#week-7-furthering-prototypes-testing-methods-and-starting-to-build-assets) | [Week 8](#week-8-more-sketching-and-texturing) | [Week 9](#week-9) | [Week 10](#week-10-unity-unity-unity-did-i-mention-unity) | [Week 11]() | [Week 12]()
 ## Week 1: Make a Thing
 
 I originally thought about making a small game on bitsby or another platform that I knew nothing about. After exploring my options, I felt a bit limited, and preferred acquiring new knowledge in a platform I was already fairly comfortable in rather than learning a new platform that I would probably never use again. 
@@ -644,6 +644,6 @@ public class DialogueManager : MonoBehaviour
 
 I still have a bit of work to do on this class, and I also have to adapt the interact functions for the NPCs. I plan on using a "master index" to lock and unlock dialogue, as the dialogue needs to be done in order. I also considered doing dialogue that would be made with choices, but it was outside of the current scope of the project. I eventually would like to make it happen but could not make it happen for now. An "e to interact" popup text is also in the works. The UI document for it is done, I just have to figure out how to make it only appear when a character is currently interactable, and in a range. I also need it to dissapear once the dialogue started. I want the characters to stay interactable even when the dialogue isn't unlocked, to make sure the player tries to go back to characters after talking to other characters. Something like "I dont really have anything to tell you right now".
 
-I will continue to work on this and update on this journal under this week until I see a grade on moodle. 
+I will continue to work on this and update on this journal under this week until I see a grade on moodle. If you'd like to see the repo with the current unity, it can be found [here](https://github.com/Nadia-Abdul-Aziz/CART315_Final).
 
-
+[Back to Top](#journal)
