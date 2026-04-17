@@ -559,4 +559,91 @@ For the second picture, we see how i was intending to make this datastructure. I
 
 ### Data structure oversights
 
-While I did attempt to complete the dialogue options the way I originally intended
+While I did attempt to complete the dialogue options the way I originally intended, I quickly realized that it was not working with the original way Nat had made the dialogue work with the UI toolkit. I was also not separating my classes properly, making it very hard to use. Instead of trying to fix the very bad data structure I had started, I restarted by entire way of handling dialogue, by using more resources this time.
+
+### Dialogue - Here we go again
+
+After some fair ammount of googling, it seemed like using Twine or Ink was PROBABLY the best way to do this. Still as stubborn as always and not wanting to learn intricate implementation again, I decided to use .json files to contain the different parts of dialogue. Here is an example of the way I formatted the .json files:
+
+```json
+[
+    {"speaker": "YOU", "text": "Ugh. This just feels… heavy?"},
+    {"speaker": "JOGGER", "text": "They say the statue is about resilience."},
+    {"speaker": "YOU", "text": "It looks like pain to me."},
+    {"speaker": "JOGGER", "text": "Hm."},
+    {"speaker": "JOGGER", "text": "They usually come together."}
+]
+```
+
+To properly format all of the lines of dialogue in our [master file](https://docs.google.com/document/d/1EsOVGIa6VVu_pUHBYe52BQZ5OG-lIwbcE0FDkxiMCf0/edit?usp=sharing), I used some AI (copilot) by giving it the format I needed and asking it to apply it to the lines I would give it. This made formatting SO much quicker, and saved me a lot of time.
+
+To import the dialogue into the Unity, I used the following classes:
+
+``` C#
+using UnityEngine;
+using System;
+using System.IO;
+using System.Collections.Generic;
+
+
+[Serializable]
+public class Line
+{
+    public string speaker;
+    public string text;
+}
+
+[Serializable]
+public class DialogueData
+{
+    public List<Line> lines;
+}
+
+public static class DialogueLoader
+{
+    public static DialogueData LoadDialogue(TextReader reader)
+    {
+        try
+        {
+            string json = reader.ReadToEnd();
+            DialogueData dialogueData = JsonUtility.FromJson<DialogueData>(json);
+            return dialogueData;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to load dialogue: {e.Message}");
+            return null;
+        }
+    }
+     
+}
+```
+
+To controll the loading of the different json files into DialogueData objects, I made another class, DialogueManager.
+
+``` C#
+using UnityEngine;
+
+public class DialogueManager : MonoBehaviour
+{
+    public int dialogueIndex = 0;
+    public DialogueData[] interactions;
+    [SerializeField] private TextReader[] dialogueFiles;
+    [SerializeField] public enum NPCnames;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        for (int i = 0; i < dialogueFiles.Length; i++)
+        {
+            interactions[i] = DialogueLoader.LoadDialogue(dialogueFiles[i]);
+        }
+    }
+}
+```
+
+I still have a bit of work to do on this class, and I also have to adapt the interact functions for the NPCs. I plan on using a "master index" to lock and unlock dialogue, as the dialogue needs to be done in order. I also considered doing dialogue that would be made with choices, but it was outside of the current scope of the project. I eventually would like to make it happen but could not make it happen for now. An "e to interact" popup text is also in the works. The UI document for it is done, I just have to figure out how to make it only appear when a character is currently interactable, and in a range. I also need it to dissapear once the dialogue started. I want the characters to stay interactable even when the dialogue isn't unlocked, to make sure the player tries to go back to characters after talking to other characters. Something like "I dont really have anything to tell you right now".
+
+I will continue to work on this and update on this journal under this week until I see a grade on moodle. 
+
+
